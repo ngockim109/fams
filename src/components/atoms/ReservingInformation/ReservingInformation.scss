@@ -1,0 +1,41 @@
+@import "../../../styles/main.scss";
+
+.reserving {
+  &-content {
+    display: flex;
+    // row-gap: $small;
+
+    flex-direction: column;
+    &-first-row {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-bottom: $small;
+      &-left,
+      &-right {
+        display: flex;
+        gap: $lg-large;
+      }
+    }
+
+    &-classes {
+      overflow: hidden;
+
+      &-info {
+        display: flex;
+        overflow-x: scroll;
+        column-gap: $medium;
+        padding-bottom: $lg-small;
+      }
+    }
+  }
+}
+
+.item-title {
+  font-weight: $fw-semi-bold;
+}
+
+.reserving-info {
+  &-content {
+    padding-top: $small;
+  }
+}

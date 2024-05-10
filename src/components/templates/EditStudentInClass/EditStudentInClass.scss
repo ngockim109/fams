@@ -1,0 +1,9 @@
+@import "../../../styles/main.scss";
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  .date-picker-form-item {
+    width: 100%;
+  }
+}

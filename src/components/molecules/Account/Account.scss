@@ -1,0 +1,55 @@
+@import "../../../styles/main.scss";
+
+.avatar {
+  gap: $small;
+}
+
+.avatar-header-container {
+  width: $lg-large;
+  height: $lg-large;
+  border-radius: 50%;
+}
+
+.avatar-header-initial {
+  color: $white;
+  font-size: $font-size-lg-medium;
+  font-weight: $fw-bold;
+}
+
+.user-name {
+  display: flex;
+  cursor: pointer;
+  justify-content: end;
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.dropdown {
+  display: inline-block;
+}
+.content-user {
+  z-index: $z-index-lowest;
+  right: 0;
+  .btn {
+    gap: $lg-small;
+    margin-bottom: $small;
+    border: none !important;
+    border-radius: none;
+    box-shadow: none !important;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: $primary-color;
+    background-color: $white !important;
+    &:hover {
+      color: $primary-color !important;
+      background-color: $light-white !important;
+    }
+  }
+  .link {
+    text-decoration: none;
+  }
+}

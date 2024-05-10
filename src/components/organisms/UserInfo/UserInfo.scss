@@ -1,0 +1,40 @@
+@import "../../../styles/main.scss";
+
+.userinfo-container {
+  flex-direction: column;
+}
+
+.userinfo-header {
+  margin-top: 1rem;
+  flex-direction: column;
+}
+
+.userinfo-name {
+  margin-top: 0.5rem;
+  font-size: $font-size-lg-large;
+}
+
+.userinfo-id {
+  margin-top: $md-small;
+  font-size: $font-size-xs-large;
+  opacity: 60%;
+}
+
+.useinfo-body {
+  width: 100%;
+  margin-top: $medium;
+  justify-content: space-evenly;
+}
+
+.useinfo-card {
+  width: $x-large;
+}
+
+.userinfo-content {
+  display: flex;
+  align-items: center;
+}
+
+.userinfo-label {
+  margin-right: $small;
+}

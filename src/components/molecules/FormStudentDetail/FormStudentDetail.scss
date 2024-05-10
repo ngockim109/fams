@@ -1,0 +1,85 @@
+@import "../../../styles/main";
+
+.basic-info-frame {
+  margin: $lg-small $lg-small;
+  padding: $medium;
+  min-height: 100%;
+  background: $white;
+  border-radius: $lg-small;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-frame {
+  margin: $lg-small $lg-small;
+  padding: $medium;
+  background: $white;
+  border-radius: $lg-small;
+}
+
+.score-frame {
+  margin: $lg-small $lg-small;
+  padding: $medium;
+  background: $white;
+  border-radius: $lg-small;
+}
+
+.studentclass {
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: $md) {
+  .student-detail-container,
+  .academic-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .info-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .info-container-1,
+      .info-container-2 {
+        display: flex;
+
+        .column {
+          flex: 1;
+        }
+      }
+
+      .info-item {
+        margin-bottom: var(--item-spacing);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .student-detail-container,
+  .academic-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .info-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .info-container-1,
+      .info-container-2 {
+        display: flex;
+
+        .column {
+          flex: 1;
+        }
+      }
+
+      .info-item {
+        margin-bottom: var(--item-spacing);
+      }
+    }
+  }
+}

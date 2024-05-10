@@ -1,0 +1,123 @@
+@import "../../../styles/main.scss";
+
+.classinfo {
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $medium;
+  }
+  .classname {
+    text-transform: uppercase;
+    color: $light-white;
+  }
+
+  .classdata {
+    gap: $medium;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: $lg-small;
+    padding: $medium;
+
+    .duration,
+    .location,
+    .createdate,
+    .updatedate {
+      border-radius: $medium;
+      border-width: 1px;
+      border-style: groove;
+      border-color: $slight-grey;
+      padding: $medium;
+    }
+    .classtitle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0;
+      font-size: $sm-medium;
+      font-weight: $fw-medium;
+    }
+    .data {
+      font-size: $lg-medium;
+      font-weight: $fw-bold;
+      margin-top: $sm-smaller;
+    }
+    .bywho {
+      font-size: $xs-medium;
+    }
+  }
+
+  .class-general-calendar {
+    width: 100%;
+    padding: 0 $medium;
+    .class-general-calendar__card {
+      width: 50%;
+      .ant-collapse {
+        .ant-collapse-header {
+          background-color: $primary-color !important;
+          display: flex;
+          align-items: center;
+          border-radius: 0;
+          .ant-collapse-expand-icon {
+            position: absolute;
+            right: 0;
+            color: $white;
+            font-size: $font-size-lg-medium;
+          }
+        }
+      }
+    }
+  }
+
+  .classtab {
+    // padding: $medium;
+    .ant-tabs-tab {
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+      margin-right: $xs-small;
+      .ant-tabs-tab-btn {
+        padding: $lg-small $md-large;
+        color: $white;
+        background: $grey;
+        border-top-left-radius: $medium;
+        border-top-right-radius: $medium;
+
+        &:hover {
+          background-color: $light-purple;
+        }
+      }
+
+      &.ant-tabs-tab-active {
+        z-index: $z-index-low;
+
+        .ant-tabs-tab-btn {
+          background-color: $primary-color;
+          color: $white;
+        }
+      }
+    }
+    .ant-tabs .ant-tabs-content-holder {
+      margin-top: -$medium;
+    }
+    .ant-tabs-nav .ant-tabs-nav-wrap {
+      margin-top: $medium;
+    }
+  }
+
+  @media screen and (max-width: $sm) {
+    .classdata {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media screen and (max-width: $lg) {
+    .classdata {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: $md) {
+    .classdata {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

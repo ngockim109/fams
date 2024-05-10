@@ -1,0 +1,25 @@
+@import "../../../styles/main.scss";
+
+.title {
+  display: flex;
+  background-color: $primary-color;
+  width: 100%;
+  font-size: $font-size-large;
+  padding: $xs-medium;
+  margin-top: $md-small;
+  color: $white;
+}
+.title-header {
+  align-items: center;
+  display: flex;
+  gap: $xs-small;
+  margin-bottom: $lg-small;
+}
+.disable-modal {
+  .ant-form-item-explain-error {
+    text-align: left;
+  }
+  .ant-modal-content {
+    padding: $medium $lg-medium !important;
+  }
+}

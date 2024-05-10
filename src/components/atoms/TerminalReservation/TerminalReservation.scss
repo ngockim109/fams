@@ -1,0 +1,50 @@
+@import "../../../styles/main.scss";
+.wrapper {
+  width: 11rem;
+  display: flex;
+  flex-direction: column;
+  .ant-btn-default:disabled {
+    background-color: $disable-color !important;
+    color: $grey;
+    opacity: 5 !important;
+    &:hover {
+      background-color: $disable-color !important;
+      color: $grey;
+      opacity: 10 !important;
+    }
+  }
+}
+
+.item-pop {
+  cursor: pointer;
+  display: flex;
+  gap: $small;
+  padding: $md-small $xs-small;
+  align-items: center;
+  border-radius: $sm-smaller;
+  box-shadow: none !important;
+  background: $white;
+  margin-bottom: $xs-small;
+  color: $third-color;
+  width: 11rem;
+
+  &:hover {
+    background-color: $fifth-color !important;
+    color: $third-color;
+  }
+}
+
+.icon {
+  align-items: center;
+  justify-items: center;
+  line-height: 100%;
+  padding-left: $small;
+}
+
+.terminal-reservation-popover-container {
+  .ant-popover-inner,
+  .ant-popover-inner {
+    padding: $small $small $md-small $small !important;
+    width: 12rem;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../styles/main.scss";
+footer {
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  height: $lg-larger;
+  padding: $small;
+  justify-content: center;
+  align-items: center;
+  gap: $small;
+  flex-shrink: 0;
+  background-color: $primary-color;
+  margin-top: auto;
+  color: $white;
+  text-align: center;
+}

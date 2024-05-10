@@ -1,0 +1,44 @@
+@import "../../../styles/main.scss";
+
+.login-form-container {
+  flex-direction: column;
+  margin: $lg-large;
+  margin-top: -$lg-large;
+}
+
+.login-card {
+  background-color: $white;
+  cursor: default;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.login-form {
+  max-width: $xx-large;
+}
+
+@media screen and (max-width: $lg) {
+  .login-form {
+    max-width: $x-large;
+  }
+  .login-form-container {
+    margin: $zero;
+    margin-top: -$lg-large;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .form {
+    max-width: $xx-large;
+  }
+}
+
+@media screen and (max-width: $xs) {
+  .form {
+    max-width: $x-large;
+  }
+}

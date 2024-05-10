@@ -1,0 +1,23 @@
+@import "../../../styles//main.scss";
+
+.wrapper-chart {
+  display: flex;
+  flex-direction: column;
+}
+.note-class {
+  display: flex;
+  flex-direction: column;
+  gap: $md-small;
+  margin-top: $medium;
+
+  .note-item {
+    display: flex;
+    align-items: center;
+    gap: $small;
+    margin-left: $lg-large;
+    .note-color {
+      width: 15px;
+      height: 10px;
+    }
+  }
+}

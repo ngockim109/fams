@@ -1,0 +1,25 @@
+@import "../../../styles/main.scss";
+
+.re-class-modal {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    padding: $lg-small 0;
+  }
+  .item-title {
+    margin-bottom: $md-small;
+  }
+  .item-content {
+    outline: none;
+    padding: $small $md-medium;
+    border-radius: $md-small;
+    background-color: $fifth-color;
+    color: $primary-color;
+    // font-size: $font-size-lg-small;
+  }
+  .time-item-content {
+    display: flex;
+    column-gap: $small;
+  }
+}

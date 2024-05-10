@@ -1,0 +1,33 @@
+@import "../../../styles/main.scss";
+
+.login-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: $secondary-color;
+}
+
+.login-left {
+  flex: 1;
+}
+.login-right {
+  flex: 1;
+  background-image: url("../../../../public/assets/images/fptSoftware.jpg");
+  background-size: cover;
+  background-position-x: 50vw;
+}
+
+@media screen and (max-width: $md) {
+  .login-left {
+    width: 100vw;
+    background-image: url("../../../../public/assets/images/fptSoftware.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .login-right {
+    flex: 0;
+    background-image: none;
+  }
+}

@@ -1,0 +1,108 @@
+@import "../../../styles/main.scss";
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  background-color: $primary-color;
+  border: none;
+
+  &:hover {
+    background-color: $primary-color !important;
+    opacity: 0.9;
+    color: $white !important;
+  }
+
+  strong {
+    margin-left: 4px;
+  }
+  &--grey {
+    background-color: $grey;
+    &:hover {
+      background-color: $grey !important;
+    }
+  }
+
+  &--import {
+    background-color: $green;
+    &:hover {
+      background-color: $green !important;
+    }
+  }
+
+  &--export {
+    background-color: $light-red;
+    &:hover {
+      background-color: $light-red !important;
+    }
+  }
+  &--cancel {
+    border: 1px solid $white;
+    background-color: $white !important;
+
+    &:hover {
+      border: 1px solid $light-red !important;
+      color: $light-red !important;
+      background-color: $white !important;
+    }
+    strong {
+      text-decoration: underline;
+    }
+  }
+  &--delete-default {
+    &:hover {
+      font-weight: $fw-bold;
+    }
+  }
+  &--add-circle {
+    background-color: $white;
+    color: $primary-color;
+    padding: 0;
+    &:hover {
+      background-color: $white !important;
+      color: $primary-color !important;
+      opacity: 0.8;
+    }
+  }
+  &--information {
+    height: $medium;
+    width: $s-lg-medium;
+  }
+  &--send-email {
+    background-color: $blur-light;
+    &:hover {
+      background-color: $dark-blur-light !important;
+    }
+  }
+  &--enable {
+    color: $yellow;
+    background-color: $blur-light;
+    &:hover {
+      background-color: $yellow !important;
+    }
+  }
+  &--send-mail {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &--icon {
+        width: 20%;
+      }
+
+      &--text {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        span {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

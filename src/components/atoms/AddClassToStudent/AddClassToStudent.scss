@@ -1,0 +1,39 @@
+@import "../../../styles/main.scss";
+
+.addclass {
+  display: flex;
+
+  .button-add-class {
+    padding: $md-small $medium 0 0;
+    margin: $sm-larger $lg-small;
+    cursor: pointer;
+    border-radius: $md-small;
+  }
+
+  .student-class {
+    margin-bottom: $medium;
+    margin-top: $medium;
+    column-gap: $medium;
+    padding-bottom: $medium;
+    display: flex;
+    overflow-x: scroll !important;
+  }
+}
+
+.add-class-form {
+  display: flex;
+  flex-direction: column;
+  padding: $medium;
+  input {
+    font-weight: $fw-medium;
+    color: $lighter-black !important;
+  }
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-item {
+    width: 45%;
+  }
+}

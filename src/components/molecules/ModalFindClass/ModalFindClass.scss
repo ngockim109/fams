@@ -1,0 +1,25 @@
+@import "../../../styles/main.scss";
+
+.modal-reserve {
+  &-title {
+    background-color: $primary-color;
+    color: $white;
+    border-radius: $xs-small $xs-small 0 0;
+    padding: $small 0;
+  }
+  // &-content {
+  //   padding: $small $lg-medium 0 $lg-medium;
+  // }
+  &-footer {
+    // display: flex;
+    // justify-content: center;
+    // transform: translate(-7%, 0) !important;
+    // width: 100%;
+    padding-bottom: $lg-medium;
+  }
+}
+@media (max-width: $md) {
+  .modal-reserve {
+    width: 70%;
+  }
+}

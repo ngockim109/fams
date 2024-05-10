@@ -1,0 +1,119 @@
+@import "../../../styles/main.scss";
+
+.email-detail {
+  color: $primary-color;
+  margin-top: $xs-small;
+  display: flex;
+  flex-direction: column;
+  gap: $small;
+  .header-title {
+    height: $md-larger;
+    background-color: $primary-color;
+    font-size: $font-size-lg-large;
+    align-items: center;
+    font-weight: $fw-semi-bold;
+    color: white;
+    padding: 0 $sm-medium;
+    display: flex;
+    border-radius: $sm-smaller $sm-smaller 0 0;
+  }
+  &-header {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    .header-side {
+      display: flex;
+      flex-direction: column;
+      padding: $sm-medium $large;
+      row-gap: $small;
+    }
+    .checkbox {
+      margin-right: $medium;
+      pointer-events: none;
+    }
+  }
+  .ant-collapse {
+    .ant-collapse-header {
+      padding: 0 !important;
+      display: flex;
+      align-items: center;
+      .ant-collapse-expand-icon {
+        position: absolute;
+        right: 0;
+        color: $white;
+        font-size: $font-size-lg-medium;
+      }
+    }
+  }
+  .item-detail {
+    margin: 0 $sm-medium;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    &-label {
+      font-weight: $fw-semi-bold;
+    }
+    &-content {
+      &-switch {
+        width: $sm-medium;
+      }
+    }
+  }
+}
+.item-collapse {
+  padding: 0 $small;
+  display: grid;
+  grid-template-columns: 12% 88%;
+  &-label {
+    font-weight: $fw-semi-bold;
+  }
+}
+.template-col {
+  display: flex;
+  justify-content: space-between;
+  gap: $lg-larger;
+  flex-direction: row;
+}
+
+.card-item {
+  width: $x-md-large !important;
+
+  .card-title {
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.score-module {
+  justify-content: center;
+  display: flex;
+}
+
+@media (max-width: $md) {
+  .email-detail {
+    &-header {
+      display: grid;
+      grid-template-columns: 100%;
+      gap: $small;
+      .header-side {
+        padding: 0 $large;
+      }
+    }
+  }
+  .template-col {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: $lg) {
+  .template-col {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $sm-medium;
+  }
+}

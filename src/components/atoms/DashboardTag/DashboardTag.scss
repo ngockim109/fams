@@ -1,0 +1,52 @@
+@import "../../../styles/main.scss";
+
+.dashboard-tag {
+  display: flex;
+  flex-direction: column;
+  border: solid $primary-color 1px;
+  width: $xxl-smd-large;
+  height: $xl-large;
+  border-radius: $sm-medium;
+  padding: $small $medium;
+  color: $primary-color;
+  gap: $small;
+  position: relative;
+  background-color: $white;
+
+  .title-tag {
+    text-transform: uppercase;
+    font-size: $font-size-normal;
+    font-weight: $fw-bold;
+  }
+  .content-tag {
+    display: flex;
+    gap: $small;
+  }
+  .icon-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $small;
+  }
+  .content {
+    font-weight: $fw-bold;
+    font-size: $font-size-larger;
+  }
+
+  .unit {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: $md) {
+  .dashboard-tag {
+    grid-column: span 3 / span 3;
+  }
+}
+
+@media (max-width: $lg) {
+  .dashboard-tag {
+    grid-column: span 3 / span 3;
+  }
+}

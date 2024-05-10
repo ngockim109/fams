@@ -1,0 +1,26 @@
+@import "../../../styles/main.scss";
+
+.user-link-container {
+  display: flex;
+  &__item {
+    color: $link-color;
+    text-decoration: underline;
+  }
+  align-items: center;
+}
+.popover-item {
+  display: flex;
+  align-items: center;
+  padding: $xxs-small;
+  a {
+    color: $black;
+  }
+  &__btn {
+    border: $zero;
+    width: 100%;
+    display: flex;
+    svg {
+      margin-right: $small;
+    }
+  }
+}

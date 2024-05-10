@@ -1,0 +1,66 @@
+@import "../../../styles/main.scss";
+
+.classname-status {
+  background-color: $primary-color;
+  padding: $lg-medium;
+  color: $light-white;
+  border-top: $xs-small solid $white;
+  .cl-st {
+    display: flex;
+    align-items: center;
+    margin-top: $lg-small;
+  }
+  .classname-label {
+    margin-left: $xs-small;
+  }
+  .classid {
+    margin-top: $lg-small;
+  }
+  hr.solid {
+    margin-top: $lg-small;
+    border: 1px solid rgb(107 114 128);
+    width: 50%;
+    margin-left: $xs-small;
+  }
+  .fourth-line {
+    display: flex;
+    align-items: center;
+    .date {
+      margin-top: $lg-small;
+      margin-left: $xs-small;
+      .enddate::after {
+        content: "|";
+        margin: 0 $md-small;
+      }
+    }
+    .icons {
+      display: flex;
+      margin: $lg-small 0 0 $xs-small;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .icons svg {
+      font-size: $font-size-lg-medium;
+      font-weight: bold;
+      margin: 0 7px;
+    }
+  }
+  .classstatus {
+    margin-left: $md-large;
+  }
+}
+@media screen and (max-width: $sm) {
+  .classname-status {
+    .fourth-line {
+      display: block;
+      .date {
+        .enddate::after {
+          content: "";
+        }
+      }
+      .icons {
+        margin-left: -$xs-small;
+      }
+    }
+  }
+}

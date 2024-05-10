@@ -1,0 +1,65 @@
+image: node:20.11.0
+
+default:
+  tags:
+    - deploy
+
+stages: # List of stages for jobs, and their order of execution
+  - build
+  - test
+  - deploy
+
+cache: # Cache dependencies for faster builds
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - node_modules/
+
+workflow:
+  rules:
+    # Only trigger pipeline for merge request events and commits to the main branch
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: "$CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS"
+    - if: "$CI_COMMIT_BRANCH"
+
+## Install npm dependencies and Cypress
+build-job: # This job runs in the build stage, which runs first.
+  image: node:20.11.0
+  stage: build
+  script:
+    - echo "Initial..."
+    - npm ci
+    - echo "Compile complete."
+
+lint-job: # Test Stage - Run code linting
+  stage: test # It can run at the same time as unit-test-job (in parallel).
+  script:
+    - echo "Linting code... "
+    - npm run format # Format follow prettier config
+    - npm run format:fix # Fix format follow prettier config
+    - npm run lint
+    - npm run lint:fix
+
+unit-test-job: # Test Stage - Run unit tests
+  allow_failure: true
+  stage: test # It only starts when the job in the build stage completes successfully.
+  script:
+    - echo "Running unit tests..."
+    - npm run test
+
+coverage-test-job: # Test Stage - Measure test coverage
+  allow_failure: true
+  stage: test
+  script:
+    - echo "Test coverage... "
+    - npm run coverage
+  artifacts:
+    paths:
+      - src/__test__/unit/coverage/
+    expire_in: 7 days
+
+deploy-job: # Deploy Stage - Deploy application
+  stage: deploy # It only runs when *both* jobs in the test stage complete successfully.
+  environment: production
+  script:
+    - echo "Deploying application..."
+    - echo "Application successfully deployed."

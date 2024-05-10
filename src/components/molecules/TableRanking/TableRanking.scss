@@ -1,0 +1,36 @@
+@import "../../../styles/main.scss";
+.table-ranking {
+  grid-column: span 4 / span 4;
+  gap: $medium;
+  display: flex;
+  flex-direction: column;
+
+  .title-time-ranking {
+    font-size: $font-size-lg-medium;
+    font-weight: $fw-semi-bold;
+    padding: $xs-small;
+    span {
+      padding: 0 $small;
+      align-items: center;
+      justify-content: center;
+      display: inline;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .table-ranking {
+    grid-column: span 10 / span 10;
+  }
+}
+@media (max-width: $md) {
+  .table-ranking {
+    grid-column: span 10 / span 10;
+  }
+}
+
+@media (max-width: $xl) {
+  .table-ranking {
+    grid-column: span 10 / span 10;
+  }
+}

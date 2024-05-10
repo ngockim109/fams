@@ -1,0 +1,16 @@
+@import "../../../styles/main.scss";
+
+.email-form-card {
+  cursor: default;
+  margin: $medium;
+}
+
+.email-form {
+  label {
+    width: $x-ex-md-larger;
+    font-weight: $fw-bold;
+  }
+  .btn-save {
+    margin-right: $lg-larger;
+  }
+}

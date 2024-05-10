@@ -1,0 +1,31 @@
+@import "../../../styles/main.scss";
+
+.largeAvatar {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  margin: $medium $medium;
+  min-height: $fw-thin;
+
+  .info-text {
+    margin-left: $medium;
+    text-align: left;
+    font-weight: $fw-bold;
+  }
+}
+.userid {
+  margin-left: $xs-small;
+}
+.avatar-container {
+  width: $ex-md-larger;
+  height: $ex-md-larger;
+  border-radius: 50%;
+}
+
+.avatar-initial {
+  color: $white;
+  font-size: $font-size-larger;
+  font-weight: $fw-bold;
+}

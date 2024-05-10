@@ -1,0 +1,84 @@
+@import "../../../styles/main.scss";
+
+.form-container {
+  padding: $medium;
+}
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // padding: $xs-large $md-larger;
+  gap: $medium;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: $small;
+    border-radius: $xs-small $xs-small $zero $zero;
+    background-color: $primary-color;
+  }
+  .ant-table-wrapper {
+    width: 100%;
+  }
+
+  .ant-form-item {
+    height: $lg-large;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ant-form-item-control-input-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ant-table-wrapper .ant-table {
+    border-radius: $zero $zero $xs-small $xs-small !important;
+  }
+  .ant-table-thead .ant-table-cell:first-child {
+    border-top-left-radius: $zero !important;
+  }
+  .ant-table-thead .ant-table-cell:last-child {
+    border-top-right-radius: $zero !important;
+  }
+}
+
+.box-title {
+  color: $white;
+  padding: $medium;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-header {
+  display: flex;
+  gap: $xs-large;
+  margin-bottom: $medium;
+  align-items: center;
+}
+
+@media screen and (max-width: $xxl) {
+  .form-wrapper {
+    .ant-form-item-explain {
+      font-size: $font-size-md-medium;
+    }
+  }
+}
+
+@media screen and (max-width: $xl) {
+  .form-wrapper {
+    .ant-form-item-explain {
+      font-size: $font-size-lg-small;
+    }
+  }
+}

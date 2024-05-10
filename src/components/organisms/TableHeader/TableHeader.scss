@@ -1,0 +1,81 @@
+@import "../../../styles/main.scss";
+
+.wrapper {
+  width: $ex-lg-larger;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-pop {
+  cursor: pointer;
+  display: flex;
+  gap: $medium;
+  padding: $small $sm-smaller;
+  align-items: center;
+  border-radius: $sm-smaller;
+  border: 0;
+  background: $white;
+
+  &:hover {
+    background-color: $grey;
+    color: $primary-color;
+  }
+}
+
+.edit-container-list {
+  height: $md-larger;
+  background-color: $primary-color;
+  font-size: $xs-large;
+  display: flex;
+  align-items: center;
+  font-weight: $fw-semi-bold;
+  color: white;
+  padding-left: $large;
+}
+
+.table-student-list {
+  padding: $lg-medium $lg-medium 0px $lg-medium;
+}
+
+.edit-container__content {
+  padding: $lg-medium;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $lg-small;
+    &__btn--right {
+      margin-left: $small;
+    }
+  }
+}
+.ant-select-selector {
+  width: $xxl-sm-lager;
+}
+
+@media screen and (max-width: $lg) {
+  .ant-select-selector {
+    width: $xxl-sm-lager;
+  }
+  .edit-container__content__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $medium;
+  }
+}
+@media screen and (max-width: $md) {
+  .ant-select-selector {
+    width: $xx-large;
+  }
+  .edit-container__content__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $medium;
+  }
+}
+.button-export-add {
+  display: flex;
+  align-items: center;
+}

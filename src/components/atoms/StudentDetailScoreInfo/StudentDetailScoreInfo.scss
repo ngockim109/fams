@@ -1,0 +1,50 @@
+@import "../../../styles/main.scss";
+
+.score-table-container {
+  background: $white;
+  color: $primary-color;
+  .class-code-divider {
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+    margin-bottom: $medium;
+  }
+  .student-class {
+    text-transform: uppercase;
+  }
+
+  .table-status {
+    display: flex;
+    align-items: center;
+    margin-bottom: $lg-small;
+    .table-status-name {
+      margin-right: $lg-medium;
+    }
+  }
+
+  .fee-tables {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: $medium;
+  }
+
+  .quiz-table,
+  .asm-table,
+  .final-table {
+    margin: 0 $small $small;
+    box-shadow: 0px 0px $lg-small $blur-black;
+
+    .ant-card-head {
+      padding: $lg-small;
+      border-radius: $md-small;
+      text-align: center;
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
+  .mock-table {
+    display: flex;
+    overflow-x: auto;
+  }
+}

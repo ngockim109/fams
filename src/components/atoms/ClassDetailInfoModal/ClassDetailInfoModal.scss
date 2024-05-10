@@ -1,0 +1,48 @@
+@import "../../../styles/main.scss";
+
+.class-info-modal {
+  height: 100%;
+  scrollbar-width: none;
+  .ant-card-body {
+    border: 1px solid $white !important;
+    box-shadow: 0px 0px $lg-small $blur-black;
+    border-radius: $small !important;
+    box-shadow: $small !important;
+    min-width: $xx-large;
+    height: 100%;
+  }
+
+  .first-line {
+    display: flex;
+    margin-bottom: $lg-small;
+    justify-content: space-between;
+    gap: $small;
+    .class-title {
+      text-overflow: ellipsis;
+    }
+  }
+  .second-line {
+    display: flex;
+    flex-direction: center;
+    padding-top: $xs-small;
+    font-size: $medium;
+    .class {
+      color: $fourth-color;
+      font-weight: $fw-semi-bold;
+    }
+  }
+  .class::after {
+    content: "|";
+    margin: 0 $md-small;
+  }
+  .st::after {
+    content: "-";
+    margin: 0 $md-small;
+  }
+  .class-status {
+    margin-top: -$md-small;
+    .class-status-1 {
+      margin-bottom: 20px;
+    }
+  }
+}

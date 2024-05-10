@@ -1,0 +1,90 @@
+@import "../../../styles/main.scss";
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    width: 100%;
+  }
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: $xs-medium;
+}
+
+.add-reserving-modal {
+  overflow-y: scroll;
+  max-height: 97vh;
+  padding: $small;
+
+  .ant-modal {
+    width: 70%;
+  }
+
+  // .ant-input-group {
+  //   .ant-input-affix-wrapper {
+  //     .ant-input {
+  //       background-color: $blur-black !important;
+  //     }
+  //   }
+  // }
+
+  .ant-modal-title {
+    // font-size: $font-size-lg-large;
+    font-weight: $fw-extra-bold;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-header {
+    background-color: $primary-color;
+    color: $white;
+    border-radius: $xs-small $xs-small 0 0;
+    padding: $small 0;
+    margin-bottom: $medium;
+  }
+  // &-content {
+  //   padding: $small $lg-medium 0 $lg-medium;
+  // }
+  &-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.add-reserving-form {
+  .ant-form-item-label > label {
+    // font-size: $font-size-large;
+    font-weight: $fw-bold;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ant-form-item-control {
+    width: 100%;
+  }
+  .error-message {
+    color: $red;
+    margin: $small 0;
+  }
+  .class-selection-container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: $small 0;
+    border: $xxs-small solid $link-color;
+    &:hover {
+      border: $xxs-small solid $dark-green !important;
+    }
+  }
+  .selected-class {
+    border: $xxs-small solid $dark-green;
+  }
+}
+.add-reserving-modal::-webkit-scrollbar {
+  width: 0 !important;
+}

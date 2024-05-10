@@ -1,0 +1,118 @@
+@import "../../../styles/main.scss";
+
+.dashboard {
+  background-color: $dashboard-main;
+  padding: $medium;
+  color: $primary-color;
+  gap: $lg-medium;
+  display: flex;
+  flex-direction: column;
+  .title-tag-group {
+    text-transform: uppercase;
+    font-size: $font-size-lg-larger;
+  }
+  .dashboard-header {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    row-gap: $lg-large;
+    column-gap: $small;
+    padding-right: $medium;
+    .wrapper-group-tag {
+      grid-column: span 10 / span 10;
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      padding: 0 $lg-large;
+      gap: $medium;
+    }
+    .wrapper-tag {
+      grid-column: span 2 / span 2;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    .wrapper-table-ranking {
+      grid-column: span 5 / span 5;
+      border: solid $white 1px;
+      border-radius: $sm-medium;
+      padding: $medium;
+      margin-right: $small;
+      background-color: $white;
+    }
+    .wrapper-student {
+      grid-column: span 5 / span 5;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .middle-dashboard {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: $small;
+  }
+  .title-header {
+    text-transform: uppercase;
+    font-size: $font-size-md-large;
+    font-weight: $fw-bold;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper-pie-chart {
+    grid-column: span 8 / span 8;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: $lg-large;
+    padding: $medium 0;
+    margin-right: $small;
+  }
+  .pie-chart {
+    grid-column: span 1 / span 1;
+    justify-content: center;
+    align-items: center;
+    border: solid $white 1px;
+    border-radius: $sm-medium;
+    padding-top: $medium;
+    padding-bottom: $small;
+    background-color: $white;
+  }
+  .wrapper-gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// @media (max-width: $md) {
+//   .wrapper-tag {
+//     grid-column: span 4 / span 4;
+//   }
+//   .wrapper-table-ranking,
+//   .wrapper-student {
+//     grid-column: span 10 / span 10;
+//   }
+// }
+
+@media (max-width: $lg) {
+  .wrapper-tag {
+    grid-column: span 4 / span 4 !important;
+  }
+  .wrapper-table-ranking,
+  .wrapper-student {
+    grid-column: span 10 / span 10 !important;
+  }
+  .pie-chart {
+    grid-column: span 2 / span 2 !important;
+  }
+}
+
+@media (max-width: $sm) {
+  .wrapper-tag {
+    grid-column: span 8 / span 8 !important;
+  }
+  .wrapper-table-ranking,
+  .wrapper-student {
+    grid-column: span 10 / span 10 !important;
+  }
+  .pie-chart {
+    grid-column: span 4 / span 4 !important;
+  }
+}

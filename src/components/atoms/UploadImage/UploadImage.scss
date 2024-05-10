@@ -1,0 +1,32 @@
+@import "../../../styles/main.scss";
+
+.modal-content-custom {
+  &__modal {
+    .ant-modal-title {
+      background-color: $primary-color !important;
+      color: $white !important;
+      border-radius: $xs-small $xs-small 0 0 !important;
+      padding: $small 0 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ant-modal-close {
+      color: $white !important;
+    }
+
+    .ant-modal-content {
+      padding-bottom: $small !important;
+    }
+
+    .ant-modal-footer {
+      margin: $small;
+    }
+  }
+  .modal-upload-container {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}

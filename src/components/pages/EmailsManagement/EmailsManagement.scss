@@ -1,0 +1,39 @@
+@import "../../../styles/main.scss";
+
+.classtab {
+  padding: 0 $md-medium $md-medium $md-medium;
+  .ant-tabs-tab {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    .ant-tabs-tab-btn {
+      padding: $lg-small $md-large;
+      color: $white;
+      background: $grey;
+      border-top-left-radius: $medium;
+      border-top-right-radius: $medium;
+
+      &:hover {
+        background-color: $light-purple;
+      }
+    }
+
+    &.ant-tabs-tab-active {
+      z-index: $z-index-low;
+
+      .ant-tabs-tab-btn {
+        background-color: $primary-color;
+        color: $white;
+      }
+    }
+  }
+  .ant-tabs .ant-tabs-content-holder {
+    margin-top: -$medium;
+  }
+  .ant-tabs-nav .ant-tabs-nav-wrap {
+    margin-top: $medium;
+  }
+  .table-container__content {
+    padding: 0;
+  }
+}

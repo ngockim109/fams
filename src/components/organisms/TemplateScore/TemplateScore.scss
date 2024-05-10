@@ -1,0 +1,32 @@
+@import "../../../styles/main.scss";
+
+.template-module-score {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .template-check-all {
+    width: auto;
+    margin-top: $medium;
+  }
+}
+
+.template-score-col {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.template-score-card {
+  cursor: auto;
+  .ant-card-head {
+    background-color: $primary-color;
+    .ant-card-head-title {
+      color: $white;
+    }
+    span {
+      color: $white;
+    }
+  }
+}

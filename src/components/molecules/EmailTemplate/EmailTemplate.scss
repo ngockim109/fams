@@ -1,0 +1,110 @@
+@import "../../../styles/main.scss";
+
+.email-template-modal {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $medium;
+  }
+
+  .btn-preview {
+    margin-right: $small;
+  }
+}
+
+.modal-title {
+  background-color: $primary-color;
+  color: $white;
+  text-align: center;
+  padding: $lg-small;
+}
+
+.modal-footer {
+  text-align: center;
+  display: flex;
+  gap: $lg-small;
+  justify-content: center;
+  padding: $lg-small 0;
+  .ant-btn-primary {
+    background-color: $primary-color;
+    color: $white;
+    border-radius: $lg-small;
+    width: $ex-sm-larger;
+    font-weight: $fw-bold;
+    // border-color: $primary-color;
+  }
+}
+
+.email-modal {
+  background-color: $primary-color;
+  padding: 0 !important;
+  border-radius: $font-size-xs-large;
+  overflow: hidden;
+  width: 10%;
+}
+.ant-modal .ant-modal-content {
+  padding: 0px 0px;
+}
+.ant-modal-header {
+  margin-bottom: 0 !important;
+}
+.ant-modal-content {
+  .ant-modal-close {
+    top: $small !important;
+  }
+}
+.btn-preview-btn {
+  background-color: $white;
+  color: $primary-color;
+  border-radius: $lg-small;
+  width: $ex-sm-larger;
+  font-weight: $fw-bold;
+  border-color: $primary-color;
+}
+.btn-send-btn {
+  background-color: $grey;
+  color: $white;
+  border-radius: $lg-small;
+  width: $ex-sm-larger;
+  font-weight: $fw-bold;
+}
+.btn-send-btn:hover {
+  background-color: $grey;
+}
+
+.email-form {
+  padding: $lg-small;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    padding-right: 0 !important;
+    width: $x-ex-md-larger;
+    font-weight: $fw-bold;
+  }
+}
+
+.email-input {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 2px;
+
+  p {
+    font-weight: $fw-bold;
+    grid-column: span 1 / span 1;
+  }
+  h4,
+  div {
+    grid-column: span 4 / span 4;
+    font-weight: $fw-normal;
+  }
+}
+.input-default {
+  display: flex;
+  align-items: center;
+  margin-bottom: $font-size-xs-large;
+  .input-title {
+    width: $x-ex-md-larger;
+    font-weight: $fw-bold;
+  }
+}

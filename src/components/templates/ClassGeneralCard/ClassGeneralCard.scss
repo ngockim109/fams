@@ -1,0 +1,50 @@
+@import "../../../styles/main.scss";
+
+.class-general-card {
+  .ant-card-head {
+    background-color: $primary-color;
+    height: $large;
+  }
+  .user-link-container {
+    display: flex;
+    &__item {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+
+  &__extra-icon {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-weight: $fw-bold;
+    font-size: $font-size-xs-large;
+    &--text {
+      margin-left: $xs-medium;
+    }
+  }
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    font-weight: $fw-bold;
+    padding: $small 0;
+    &--header {
+      width: $ex-md-larger;
+      display: flex;
+      align-items: center;
+      font-weight: $fw-bold;
+    }
+    &--title {
+      margin-left: $xs-medium;
+    }
+  }
+  &__divider {
+    margin: $medium 0;
+  }
+}
