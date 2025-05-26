@@ -11,7 +11,7 @@ FAMS is a comprehensive web-based platform developed to streamline the training 
 ## 👥 Team Composition
 
 - **Team Size:** 8 Front-End Developers, 8 Back-End Developers
-- **Front-End Lead:** [**Github:** ngockim109](https://github.com/ngockim109)
+- **Front-End Lead:** [Thai Thi Ngoc Kim](https://kim-thai-thi-ngoc.vercel.app/)
 
 ---
 
