@@ -82,7 +82,7 @@ The Fresher Academy Management System (FAMS) facilitates seamless administration
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/fams.git
+git clone https://github.com/ngockim109/fams.git
 cd fams
 
 # Install dependencies
