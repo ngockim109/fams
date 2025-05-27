@@ -13,7 +13,7 @@
 }
 .login-right {
   flex: 1;
-  background-image: url("../../../../public/assets/images/fptSoftware.jpg");
+  background-image: url("../../../../public/assets/images/cover.png");
   background-size: cover;
   background-position-x: 50vw;
 }
@@ -21,7 +21,7 @@
 @media screen and (max-width: $md) {
   .login-left {
     width: 100vw;
-    background-image: url("../../../../public/assets/images/fptSoftware.jpg");
+    background-image: url("../../../../public/assets/images/cover.png");
     background-size: cover;
     background-repeat: no-repeat;
   }

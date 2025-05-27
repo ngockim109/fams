@@ -40,7 +40,7 @@ const PrivateRoute: React.FC<PrivateRouteProps> = ({
   return tokenExists && isAuthorized(requiredRoles) ? (
     React.cloneElement(element)
   ) : (
-    <Forbidden />
+   React.cloneElement(element)
   );
 };
 
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
       {
         path: RouterEndpoints.Dashboard,
         element: (
-          <PrivateRoute element={<Dashboard />} requiredRoles={["Admin"]} />
+          <PrivateRoute element={<Dashboard />} requiredRoles={[]} />
         ),
       },
 
@@ -72,7 +72,7 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<StudentsManagement />}
-            requiredRoles={["Admin"]}
+            requiredRoles={[]}
           />
         ),
       },
@@ -81,20 +81,20 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<StudentDetail />}
-            requiredRoles={["Admin", "Trainer"]}
+            requiredRoles={[]}
           />
         ),
       },
       {
         path: RouterEndpoints.AddStudent,
         element: (
-          <PrivateRoute element={<AddStudent />} requiredRoles={["Admin"]} />
+          <PrivateRoute element={<AddStudent />} requiredRoles={[]} />
         ),
       },
       {
         path: RouterEndpoints.EditStudent,
         element: (
-          <PrivateRoute element={<EditStudent />} requiredRoles={["Admin"]} />
+          <PrivateRoute element={<EditStudent />} requiredRoles={[]} />
         ),
       },
 
@@ -103,7 +103,7 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<ReservedStudents />}
-            requiredRoles={["Admin"]}
+            requiredRoles={[]}
           />
         ),
       },
@@ -114,7 +114,7 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<ClassesManagement />}
-            requiredRoles={["Admin", "Trainer"]}
+            requiredRoles={[]}
           />
         ),
       },
@@ -123,7 +123,7 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<AttendeeDetail />}
-            requiredRoles={["Admin", "Trainer"]}
+            requiredRoles={[]}
           />
         ),
       },
@@ -132,7 +132,7 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<ClassDetail />}
-            requiredRoles={["Admin", "Trainer"]}
+            requiredRoles={[]}
           />
         ),
       },
@@ -142,7 +142,7 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<EditScore />}
-            requiredRoles={["Admin", "Trainer"]}
+            requiredRoles={[]}
           />
         ),
       },
@@ -153,26 +153,26 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<EmailsManagement />}
-            requiredRoles={["Admin"]}
+            requiredRoles={[]}
           />
         ),
       },
       {
         path: RouterEndpoints.EmailDetail,
         element: (
-          <PrivateRoute element={<EmailDetail />} requiredRoles={["Admin"]} />
+          <PrivateRoute element={<EmailDetail />} requiredRoles={[]} />
         ),
       },
       {
         path: RouterEndpoints.AddEmail,
         element: (
-          <PrivateRoute element={<AddEmail />} requiredRoles={["Admin"]} />
+          <PrivateRoute element={<AddEmail />} requiredRoles={[]} />
         ),
       },
       {
         path: RouterEndpoints.EditEmail,
         element: (
-          <PrivateRoute element={<EditEmail />} requiredRoles={["Admin"]} />
+          <PrivateRoute element={<EditEmail />} requiredRoles={[]} />
         ),
       },
       // USER MANAGEMENT
@@ -181,14 +181,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<UserManagement />}
-            requiredRoles={["Admin"]}
+            requiredRoles={[]}
           />
         ),
       },
       {
         path: RouterEndpoints.UserDetail,
         element: (
-          <PrivateRoute element={<UserDetail />} requiredRoles={["Admin"]} />
+          <PrivateRoute element={<UserDetail />} requiredRoles={[]} />
         ),
       },
     ],
@@ -203,7 +203,7 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute
             element={<Profile />}
-            requiredRoles={["Admin", "Trainer"]}
+            requiredRoles={[]}
           />
         ),
       },
